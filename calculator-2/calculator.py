@@ -19,10 +19,17 @@ while True:
         num2 = tokens[2]
     if len(tokens) > 3:
         num3 = tokens[3]
-        
+
     #create break if they want to quit
-    #create break if they want to quit
-    #assign variables to tokens  
-    #factor in if there are > than 2 tokens
-    #pass arithmatic functions
-    #add float
+    if "q" in tokens:
+        print("Goodbye")
+        break
+
+    if operator == "+":
+        result = add(float(num1), float(num2))
+    if operator == "-":
+        result = subtract(float(num1), float(num2))
+    if operator == "*":
+        result = multiply(float(num1), float(num2))
+    if operator == "/":
+        result = divide(float(num1), float(num2))    
