@@ -7,9 +7,11 @@ while True:
     #get user equation
     user_input = input("Enter your equation > ")
     #tokenize user input
-    tokens = user_input.split(" ")
-
-
+    tokens = user_input.split()
+    #create break if they want to quit
+    if "q" in tokens:
+        print("Goodbye")
+        break
     #assign variables to tokens    
     operator = tokens[0]
     num1 = tokens[1]
@@ -20,10 +22,7 @@ while True:
     if len(tokens) > 3:
         num3 = tokens[3]
     result = None
-    #create break if they want to quit
-    if "q" in tokens:
-        print("Goodbye")
-        break
+
     #pass arithmatic functions
     #add float
     if operator == "+":
