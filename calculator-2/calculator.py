@@ -23,7 +23,7 @@ while True:
         num3 = tokens[3]
     result = None
 
-    #pass arithmatic functions
+    #pass arithmatic functions  
     #add float
     if operator == "+":
         result = add(float(num1), float(num2))
