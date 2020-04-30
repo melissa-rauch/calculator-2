@@ -19,12 +19,13 @@ while True:
         num2 = tokens[2]
     if len(tokens) > 3:
         num3 = tokens[3]
-
+    result = None
     #create break if they want to quit
     if "q" in tokens:
         print("Goodbye")
         break
-
+    #pass arithmatic functions
+    #add float
     if operator == "+":
         result = add(float(num1), float(num2))
     if operator == "-":
@@ -33,3 +34,13 @@ while True:
         result = multiply(float(num1), float(num2))
     if operator == "/":
         result = divide(float(num1), float(num2))    
+    if operator == "square":
+        result = square(float(num1), float(num2))
+    if operator == "cube":
+        result = cube(float(num1))
+    if operator == "power":
+        result = power(float(num1), float(num2))
+    if operator == "mod":
+        result = mod(float(num1), float(num2))
+    
+    print(result)
