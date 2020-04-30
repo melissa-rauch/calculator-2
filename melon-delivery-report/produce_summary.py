@@ -19,7 +19,6 @@ def melon_delivery_report(date, the_file):
     the_file.close()
 
 #call the function, pass in argument as open file
-
 melon_delivery_report("2014-05-19", open("um-deliveries-20140519.txt"))
 melon_delivery_report("2014-05-20", open("um-deliveries-20140520.txt"))
 melon_delivery_report("2014-05-21", open("um-deliveries-20140521.txt"))
